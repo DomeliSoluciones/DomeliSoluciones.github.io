@@ -32,6 +32,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:#fff;border-botto
 .lista{list-style:none;display:flex;flex-direction:column;font-size:19px;font-weight:600;color:#6b3fa0}
 .lista li{padding:11px 0;border-bottom:1px solid #e4d9ea}
 .lista li:last-child{border-bottom:none}
+
+.lista li{padding:0}
+.lista details{border-bottom:1px solid #e4d9ea}
+.lista li:last-child details{border-bottom:none}
+.lista summary{list-style:none;cursor:pointer;padding:11px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:color .2s}
+.lista summary::-webkit-details-marker{display:none}
+.lista summary::after{content:'+';font-size:22px;font-weight:600;color:#a89fc0;line-height:1;flex-shrink:0;transition:transform .2s}
+.lista details[open] summary::after{content:'−';color:#6b3fa0}
+.lista summary:hover{color:#57337f}
+.lista details p{font-size:14px;font-weight:400;color:#5c5575;line-height:1.7;padding:0 36px 14px 0}
 .pie-bloque{margin-top:auto;display:flex;flex-direction:column;gap:12px}
 .herr{border-top:2px solid #e4d9ea;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .herr small{display:block;font-size:11px;font-weight:800;letter-spacing:2px;color:#6b3fa0;text-transform:uppercase}
@@ -182,11 +192,11 @@ footer{background:#2f1b47;padding:48px 60px}
     <div class="bloque">
       <h2>Outsourcing Contable y Tributario</h2>
       <ul class="lista">
-        <li>Contabilidad general</li>
-        <li>Declaraciones al SRI</li>
-        <li>Firmas electrónicas</li>
-        <li>Trámites tributarios</li>
-        <li>Asesoría contable permanente</li>
+        <li><details name="g1"><summary>Contabilidad general</summary><p>Registro ordenado de las operaciones de la empresa y elaboración de sus estados financieros.</p></details></li>
+        <li><details name="g1"><summary>Declaraciones al SRI</summary><p>Preparación y presentación puntual de las obligaciones tributarias mensuales y anuales.</p></details></li>
+        <li><details name="g1"><summary>Firmas electrónicas</summary><p>Emisión y renovación de la firma electrónica.</p></details></li>
+        <li><details name="g1"><summary>Trámites tributarios</summary><p>Gestión de solicitudes, actualizaciones y requerimientos ante el SRI.</p></details></li>
+        <li><details name="g1"><summary>Asesoría contable permanente</summary><p>Consulta continua para resolver dudas contables y tributarias durante el año.</p></details></li>
       </ul>
       <div class="pie-bloque">
         <a href="https://wa.me/593939415327?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20Outsourcing%20Contable%20DOMELI" class="btn-out" target="_blank" rel="noopener">Consultar por WhatsApp</a>
@@ -196,11 +206,11 @@ footer{background:#2f1b47;padding:48px 60px}
     <div class="bloque">
       <h2>Consultoría Empresarial</h2>
       <ul class="lista">
-        <li>Diagnóstico operativo en sitio</li>
-        <li>Análisis integrado de ventas, inventarios y cartera</li>
-        <li>Indicadores y tableros de control</li>
-        <li>Control de gastos</li>
-        <li>Acompañamiento gerencial</li>
+        <li><details name="g2"><summary>Diagnóstico operativo en sitio</summary><p>Visita a la empresa para observar cómo se trabaja en bodega, cobranza, administración y despacho, y levantar la información tal como ocurre en la práctica.</p></details></li>
+        <li><details name="g2"><summary>Análisis integrado de ventas, inventarios y cartera</summary><p>Revisión conjunta para entender cómo se relacionan y cuál es su efecto en la liquidez de la empresa.</p></details></li>
+        <li><details name="g2"><summary>Indicadores y tableros de control</summary><p>Definición de qué medir según la operación de cada empresa y construcción de tableros en Excel o Power BI para dar seguimiento y decidir con información.</p></details></li>
+        <li><details name="g2"><summary>Control de gastos</summary><p>Clasificación ordenada del gasto y comparación periódica contra el presupuesto, para identificar desvíos y oportunidades de ahorro.</p></details></li>
+        <li><details name="g2"><summary>Acompañamiento gerencial</summary><p>Seguimiento continuo después de la implementación, revisando resultados y ajustando lo necesario.</p></details></li>
       </ul>
       <div class="pie-bloque">
         <a href="https://wa.me/593985262924?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20DOMELI%20Consultor%C3%ADa%20Empresarial" class="btn-out" target="_blank" rel="noopener">Consultar por WhatsApp</a>
@@ -231,35 +241,8 @@ footer{background:#2f1b47;padding:48px 60px}
       <div>Acompañamiento continuo</div>
     </div>
   </div>
-  <a href="#detalle" class="ver-detalle">Ver detalle de servicios y método ↓</a>
+  <a href="#metodo" class="ver-detalle">Conocer el Método DOMELI ↓</a>
 </main>
-
-<!-- DETALLE DE SERVICIOS -->
-<section class="s" id="detalle">
-  <div class="container">
-    <p class="section-label fade-up">Servicios</p>
-    <h2 class="section-title fade-up">Qué incluye cada servicio.</h2>
-    <div class="divider"></div>
-    <div class="detalle-grid">
-      <div class="detalle-card fade-up">
-        <h3>Outsourcing Contable y Tributario</h3>
-        <div class="srv"><b>Contabilidad general</b><p>Registro ordenado de las operaciones de la empresa y elaboración de sus estados financieros.</p></div>
-        <div class="srv"><b>Declaraciones al SRI</b><p>Preparación y presentación puntual de las obligaciones tributarias mensuales y anuales.</p></div>
-        <div class="srv"><b>Firmas electrónicas</b><p>Emisión y renovación de la firma electrónica.</p></div>
-        <div class="srv"><b>Trámites tributarios</b><p>Gestión de solicitudes, actualizaciones y requerimientos ante el SRI.</p></div>
-        <div class="srv"><b>Asesoría contable permanente</b><p>Consulta continua para resolver dudas contables y tributarias durante el año.</p></div>
-      </div>
-      <div class="detalle-card fade-up">
-        <h3>Consultoría Empresarial</h3>
-        <div class="srv"><b>Diagnóstico operativo en sitio</b><p>Visita a la empresa para observar cómo se trabaja en bodega, cobranza, administración y despacho, y levantar la información tal como ocurre en la práctica.</p></div>
-        <div class="srv"><b>Análisis integrado de ventas, inventarios y cartera</b><p>Revisión conjunta para entender cómo se relacionan y cuál es su efecto en la liquidez de la empresa.</p></div>
-        <div class="srv"><b>Indicadores y tableros de control</b><p>Definición de qué medir según la operación de cada empresa y construcción de tableros en Excel o Power BI para dar seguimiento y decidir con información.</p></div>
-        <div class="srv"><b>Control de gastos</b><p>Clasificación ordenada del gasto y comparación periódica contra el presupuesto, para identificar desvíos y oportunidades de ahorro.</p></div>
-        <div class="srv"><b>Acompañamiento gerencial</b><p>Seguimiento continuo después de la implementación, revisando resultados y ajustando lo necesario.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- MÉTODO -->
 <section class="s metodo-s" id="metodo">
@@ -375,7 +358,7 @@ footer{background:#2f1b47;padding:48px 60px}
       <div class="footer-tag">Soluciones Integrales</div>
     </div>
     <div class="footer-links">
-      <a href="#detalle">Servicios</a>
+      <a href="#servicios">Servicios</a>
       <a href="#metodo">Método DOMELI</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
