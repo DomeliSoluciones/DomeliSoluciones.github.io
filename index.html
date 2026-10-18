@@ -62,7 +62,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:#fff;border-botto
 .metodo{display:flex;flex-direction:column;gap:10px}
 .metodo .lbl{font-size:12px;font-weight:800;letter-spacing:2px;color:#6b3fa0;text-transform:uppercase}
 .etapas{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;font-size:16px;font-weight:700;line-height:1.25}
-.etapas div{border-top:4px solid #6b3fa0;padding-top:8px}
+.etapas>div{border-top:4px solid #6b3fa0;padding-top:10px}
+.etapas b{display:block;font-size:16px;font-weight:700;margin-bottom:4px}
+.etapas p{font-size:13px;font-weight:400;color:#5c5575;line-height:1.55}
 
 /* SECCIONES */
 section.s{padding:88px 60px}
@@ -232,33 +234,17 @@ footer{background:#2f1b47;padding:48px 60px}
     </div>
   </div>
 
-  <div class="metodo" id="metodo-resumen">
+  <div class="metodo" id="metodo">
     <div class="lbl">Método DOMELI</div>
     <div class="etapas">
-      <div>Diagnóstico en sitio</div>
-      <div>Plan de intervención</div>
-      <div>Implementación</div>
-      <div>Acompañamiento continuo</div>
+      <div><b>Diagnóstico en sitio</b><p>Análisis directo de la operación: fuentes de información, procesos, estructura organizacional y puntos de descontrol. El diagnóstico define el alcance real del trabajo.</p></div>
+      <div><b>Plan de intervención</b><p>Mapa estructurado de proyectos con secuencia lógica y resultados esperados. El cliente conoce con precisión el alcance de cada etapa antes de comenzar.</p></div>
+      <div><b>Implementación</b><p>Herramientas de control en Excel y Power BI, procesos, políticas y clasificación de gastos. Todo conectado a la realidad del negocio.</p></div>
+      <div><b>Acompañamiento continuo</b><p>El proceso no concluye con la entrega. El seguimiento garantiza que la información se traduzca en decisiones concretas conforme el negocio evoluciona.</p></div>
     </div>
   </div>
-  <a href="#metodo" class="ver-detalle">Conocer el Método DOMELI ↓</a>
+</div>
 </main>
-
-<!-- MÉTODO -->
-<section class="s metodo-s" id="metodo">
-  <div class="container">
-    <p class="section-label fade-up">Metodología</p>
-    <h2 class="section-title fade-up">El Método DOMELI</h2>
-    <div class="divider fade-up"></div>
-    <p class="section-body fade-up">Un enfoque de diagnóstico y control integral que parte del entendimiento profundo de cómo funciona realmente el negocio. No por partes. Como sistema.</p>
-    <div class="etapas-d fade-up">
-      <div class="etapa"><span class="etapa-num">Etapa 01</span><h4>Diagnóstico en sitio</h4><p>Análisis directo de la operación: fuentes de información, procesos, estructura organizacional y puntos de descontrol. El diagnóstico define el alcance real del trabajo.</p></div>
-      <div class="etapa"><span class="etapa-num">Etapa 02</span><h4>Plan de intervención</h4><p>Mapa estructurado de proyectos con secuencia lógica y resultados esperados. El cliente conoce con precisión el alcance de cada etapa antes de comenzar.</p></div>
-      <div class="etapa"><span class="etapa-num">Etapa 03</span><h4>Implementación</h4><p>Herramientas de control en Excel y Power BI, procesos, políticas y clasificación de gastos. Todo conectado a la realidad del negocio.</p></div>
-      <div class="etapa"><span class="etapa-num">Etapa 04</span><h4>Acompañamiento continuo</h4><p>El proceso no concluye con la entrega. El seguimiento garantiza que la información se traduzca en decisiones concretas conforme el negocio evoluciona.</p></div>
-    </div>
-  </div>
-</section>
 
 <!-- NOSOTROS -->
 <section class="s nosotros" id="nosotros">
