@@ -18,17 +18,19 @@
   body{margin:0;font-family:'Inter',sans-serif;background:#fff;color:var(--ink)}
   a{text-decoration:none}
   nav{position:fixed;top:0;left:0;right:0;z-index:100;background:#fff;border-bottom:1px solid var(--l100);
-    padding:0 60px;height:68px;display:flex;align-items:center;justify-content:space-between}
-  .nav-brand img{height:42px;width:auto;display:block}
+    padding:0 60px;height:84px;display:flex;align-items:center;justify-content:space-between}
+  .nav-brand img{height:60px;width:auto;display:block}
+  .nav-brand{display:flex;align-items:center}
   .nav-links{display:flex;gap:36px;list-style:none;margin:0;padding:0;margin-left:auto;margin-right:28px}
   .nav-links a{color:#374151;font-size:.82rem;font-weight:500;transition:color .2s}
   .nav-links a:hover{color:var(--l700)}
   .nav-cta{background:var(--l700);color:#fff;padding:9px 20px;border-radius:10px;font-size:.82rem;font-weight:600;transition:background .2s}
   .nav-cta:hover{background:var(--l800)}
-  @media(max-width:900px){nav{padding:0 24px}}
+  @media(max-width:900px){nav{padding:0 20px;height:72px}.nav-brand img{height:50px}.hero{padding-top:128px!important}}
+  @media(max-width:600px){.nav-cta{display:none}.nav-links{margin-right:0!important}.nav-links a{font-size:.9rem!important;font-weight:600!important;color:#6b3fa0!important}}
   main{max-width:920px;margin:0 auto;padding:0 24px}
 
-  .hero{text-align:center;padding:148px 0 40px}
+  .hero{text-align:center;padding:164px 0 40px}
   .hero .logo{height:64px;width:auto;margin:0 auto 22px;display:block}
   .hero h1{font-size:2.5rem;line-height:1.15;margin:0 0 16px;font-weight:800;color:var(--ink)}
   .accent-bar{width:40px;height:4px;background:var(--l700);border:none;margin:0 auto 20px}
